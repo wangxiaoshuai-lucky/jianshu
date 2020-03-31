@@ -7,9 +7,7 @@ export const HeadWrapper = styled.div`
     border-bottom: 1px solid #f0f0f0;
 `
 
-export const Logo = styled.a.attrs({
-    href: '/'
-})`
+export const Logo = styled.div`
     position: absolute;
     top:0;
     left:0;
@@ -26,6 +24,49 @@ export const Nav = styled.div`
     margin: 0 auto;
     padding-right: 70px;
     box-sizing: border-box;
+`
+
+export const SearchInfo = styled.div`
+    position: absolute;
+    left: 0;
+    top: 56px;
+    width:240px;
+    padding: 0 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+`
+export const SearchTitle = styled.div`
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #969696;
+`
+
+export const SearchSwitch = styled.span`
+    float: right;
+    font-size: 13px;
+    color: #969696;
+    cursor: pointer;
+    .spin {
+        display: block;
+        float: left;
+        font-size: 12px;
+        transition: all .2s ease-in;
+        transform-origin: center center;
+    }
+`
+
+export const SearchInfoItem = styled.a`
+    float: left;
+    margin-right: 10px;
+    display: block;
+    margin-bottom: 15px;
+    line-height: 20px;
+    padding:0 5px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    color: #969696;
+    border-radius: 2px;
 `
 
 export const NavItem = styled.div`
@@ -47,7 +88,7 @@ export const NavItem = styled.div`
 export const SearchWrapper = styled.div`
     float: left;
     position: relative;
-    .iconfont {
+    .zoom {
         position: absolute;
         right: 5px;
         bottom: 5px;
